@@ -1,0 +1,22 @@
+{
+  "name": "my-journey-nodejs",
+  "version": "1.0.0",
+  "description": "masih belajar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmanz73/my-journey-nodejs.git"
+  },
+  "keywords": [
+    "learn"
+  ],
+  "author": "vmanz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmanz73/my-journey-nodejs/issues"
+  },
+  "homepage": "https://github.com/vmanz73/my-journey-nodejs#readme"
+}
