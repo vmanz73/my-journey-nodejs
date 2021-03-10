@@ -10,6 +10,10 @@ app.get('/about',(req, res) => {
     res.sendFile('./views/about.html', {root: __dirname})
 })
 
+app.get('/add-user',(req, res) => {
+  res.sendFile('./views/add.html', {root: __dirname})
+})
+
 app.use((req, res) => {
     res.sendFile('./views/404.html', {root: __dirname})
 })

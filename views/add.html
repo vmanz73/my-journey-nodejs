@@ -60,37 +60,27 @@
             </form>
         </div>
     </nav>
-    <h1>Hello, world!</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <h1>Add Item</h1>
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputfirstname">First name</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="jhon">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputlastname">Last name</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="jhon">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputaccount">account</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="@john">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
