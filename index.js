@@ -4,7 +4,12 @@ const port = 3000
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  res.render('index')
+  const items = [
+    {fn:'vman',ln:'maulana',ac:'@vman'},
+    {fn:'ads',ln:'maulana',ac:'@ads'},
+    {fn:'wid',ln:'maulana',ac:'@wid'}
+  ]
+  res.render('index', {items})
 })
 
 app.get('/about',(req, res) => {
