@@ -1,21 +1,22 @@
 const express = require('express')
 const app = express()
 const port = 3000
+app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  res.sendFile('./views/index.html', {root: __dirname})
+  res.render('index')
 })
 
 app.get('/about',(req, res) => {
-    res.sendFile('./views/about.html', {root: __dirname})
+    res.render('about')
 })
 
 app.get('/add-user',(req, res) => {
-  res.sendFile('./views/add.html', {root: __dirname})
+  res.render('add')
 })
 
 app.use((req, res) => {
-    res.sendFile('./views/404.html', {root: __dirname})
+    res.render('404')
 })
 
 app.listen(port, () => {
