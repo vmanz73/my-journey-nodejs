@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 4000
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
@@ -9,19 +9,23 @@ app.get('/', (req, res) => {
     {fn:'ads',ln:'maulana',ac:'@ads'},
     {fn:'wid',ln:'maulana',ac:'@wid'}
   ]
-  res.render('index', {items})
+  const title = {title:'index'}
+  res.render('index', {items : items, title: title})
 })
 
 app.get('/about',(req, res) => {
-    res.render('about')
+    const title = {title:'about'}
+    res.render('about', {title: title})
 })
 
 app.get('/add-user',(req, res) => {
-  res.render('add')
+  const title = {title:'add item'}
+  res.render('add', {title: title})
 })
 
 app.use((req, res) => {
-    res.render('404')
+    const title = {title:'error not found'}
+    res.render('404', {title: title})
 })
 
 app.listen(port, () => {
